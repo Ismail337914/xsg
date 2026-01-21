@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+:root {
+  /* Enterprise-neutral palette (cool grays, high contrast, minimal accent). */
+  --background: #0c1424;
+  --foreground: #e9eef5;
+  --surface: #101b2f;
+  --surface-2: #12223a;
+  --muted: #a5b2c8;
+  --muted-2: #7f8aa3;
+  --border: color-mix(in oklab, var(--foreground) 16%, transparent);
+  --accent: #96b9ff;
+  --accent-2: #bed5ff;
+  --ring: color-mix(in oklab, var(--accent) 60%, transparent);
+  --shadow-card: 0 12px 40px rgba(5, 12, 26, 0.35);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-muted: var(--muted);
+  --color-muted-2: var(--muted-2);
+  --color-border: var(--border);
+  --color-accent: var(--accent);
+  --color-accent-2: var(--accent-2);
+  --color-ring: var(--ring);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+   font-family: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+::selection {
+  background: color-mix(in oklab, var(--accent) 35%, transparent);
+}
