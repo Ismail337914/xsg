@@ -33,7 +33,7 @@ export default function Home() {
                 </a>
                 <a
                   className="transition-colors hover:text-foreground"
-                  href="#industries"
+                  href="#experience"
                 >
                   {t("Experience", "Iskustvo")}
                 </a>
@@ -79,22 +79,19 @@ export default function Home() {
               <div className="lg:col-span-8">
                 <h1 className="max-w-3xl text-pretty text-4xl font-semibold leading-tight tracking-tight sm:text-5xl">
                   {t(
-                    "Dedicated Engineering & QA Teams for Mission-Critical Software",
-                    "Posvećeni inženjerski i QA timovi za kritične softverske sisteme"
+                    "We build and scale reliable software for growing businesses.",
+                    "Gradimo i skaliramo pouzdan softver za rastuće biznise."
                   )}
                 </h1>
                 <p className="mt-5 max-w-2xl text-pretty text-lg leading-relaxed text-muted">
                   {t(
-                    "We provide experienced software engineers and QA professionals on an hourly basis, helping international companies build, test, and scale reliable digital products.",
-                    "Obezbjeđujemo iskusne softverske inženjere i QA stručnjake na satnoj osnovi, pomažući međunarodnim kompanijama da grade, testiraju i skaliraju pouzdane digitalne proizvode."
+                    "A senior development team you can plug into your product — without the risks of outsourcing.",
+                    "Seniorski razvojni tim koji se uklapa u vaš proizvod — bez rizika klasičnog outsourcinga."
                   )}
                 </p>
-                <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+                <div className="mt-8 flex">
                   <Button href="#conversation" variant="primary">
-                    {t("Start a conversation", "Započnite razgovor")}
-                  </Button>
-                  <Button href="#project-brief" variant="secondary">
-                    {t("Tell us about your project", "Recite nam o vašem projektu")}
+                    {t("Start a conversation", "Započnimo razgovor")}
                   </Button>
                 </div>
               </div>
@@ -105,56 +102,11 @@ export default function Home() {
                     {t("Operational fit", "Operativno uklapanje")}
                   </div>
                   <ul className="mt-3 space-y-2 text-sm text-muted">
-                    <li>{t("EU & US time zones", "EU i US vremenske zone")}</li>
+                    <li>{t("Direct access to senior engineers", "Direktan pristup senior inženjerima")}</li>
                     <li>{t("Clear documentation and reporting", "Jasna dokumentacija i izvještavanje")}</li>
-                    <li>{t("Senior-level delivery focus", "Fokus na isporuku senior nivoa")}</li>
+                    <li>{t("EU & US time zones", "EU i US vremenske zone")}</li>
                   </ul>
                 </div>
-              </div>
-            </div>
-          </Container>
-        </Section>
-
-        {/* 2. TRUST SIGNAL SECTION */}
-        <Section id="trust">
-          <Container>
-            <div className="grid gap-10 lg:grid-cols-12">
-              <div className="lg:col-span-4">
-                <h2 className="text-xl font-semibold tracking-tight">
-                  {t("Trusted delivery for complex systems", "Pouzdana isporuka za složene sisteme")}
-                </h2>
-                <p className="mt-3 text-sm leading-relaxed text-muted">
-                  {t(
-                    "We operate with an enterprise mindset: measured scope, quality controls, and predictable execution.",
-                    "Radimo s enterprise pristupom: odmjeren obim, kontrole kvaliteta i predvidiva realizacija."
-                  )}
-                </p>
-              </div>
-              <div className="lg:col-span-8">
-                <ul className="grid gap-4 sm:grid-cols-2">
-                  {[
-                    t(
-                      "Experience on large-scale systems used by millions of users",
-                      "Iskustvo na velikim sistemima koje koriste milioni korisnika"
-                    ),
-                    t(
-                      "Long-term partnerships with international companies",
-                      "Dugoročna partnerstva s međunarodnim kompanijama"
-                    ),
-                    t(
-                      "Proven delivery in high-availability and regulated environments",
-                      "Dokazana isporuka u visokodostupnim i regulisanim okruženjima"
-                    ),
-                    t("Teams aligned with EU & US time zones", "Timovi usklađeni s EU i US vremenskim zonama"),
-                  ].map((item) => (
-                    <li
-                      key={item}
-                      className="rounded-2xl border border-border bg-surface/60 p-5 text-sm leading-relaxed shadow-[var(--shadow-card)]"
-                    >
-                      {item}
-                    </li>
-                  ))}
-                </ul>
               </div>
             </div>
           </Container>
@@ -164,49 +116,42 @@ export default function Home() {
         <Section id="what-we-do" className="border-y border-border bg-surface/30">
           <Container>
             <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">
-              {t("Software Engineering & Quality Assurance, Done Right", "Softverski inženjering i QA, kako treba")}
+              {t("What we do for product teams", "Šta radimo za produkt timove")}
             </h2>
             <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted">
               {t(
-                "We provide dedicated professionals who integrate with your team, follow your standards, and deliver work that holds up in production and audit-ready environments.",
-                "Obezbjeđujemo posvećene profesionalce koji se integrišu u vaš tim, prate vaše standarde i isporučuju rad koji traje u produkciji i spreman je za reviziju."
+                "Senior engineers and QA who slot into your roadmap and keep delivery steady.",
+                "Senior inženjeri i QA koji se uklapaju u vaš roadmap i drže isporuku stabilnom."
               )}
             </p>
             <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
               {[
                 {
-                  title: t("Web & backend development", "Web i backend razvoj"),
+                  title: t("Custom web applications", "Prilagođene web aplikacije"),
                   desc: t(
-                    "Practical architecture, maintainable codebases, and predictable releases.",
-                    "Praktična arhitektura, održivi kodni temelji i predvidiva izdanja."
+                    "Built to support growth, performance, and long-term maintainability.",
+                    "Građene da podrže rast, performanse i dugoročno održavanje."
                   ),
                 },
                 {
-                  title: t("Mobile application development", "Razvoj mobilnih aplikacija"),
+                  title: t("Scalable backend systems", "Skalabilni backend sistemi"),
                   desc: t(
-                    "Cross-platform or native delivery focused on reliability and supportability.",
-                    "Isporuka za više platformi ili native, fokus na pouzdanost i održavanje."
+                    "Handles traffic and data securely without slowing your roadmap.",
+                    "Podnose promet i podatke sigurno, bez usporavanja roadmapa."
                   ),
                 },
                 {
-                  title: t("Manual & automated testing", "Manualno i automatizovano testiranje"),
+                  title: t("Long-term product development", "Dugoročni razvoj proizvoda"),
                   desc: t(
-                    "Coverage where it matters: regressions, critical flows, and edge cases.",
-                    "Pokrivenost gdje je najvažnije: regresije, kritični tokovi i rubni slučajevi."
+                    "Steady senior delivery that keeps releases predictable.",
+                    "Stabilna seniorska isporuka koja drži releaseove predvidivim."
                   ),
                 },
                 {
-                  title: t("Test strategy & quality processes", "Strategija testiranja i procesi kvaliteta"),
+                  title: t("Dedicated development teams", "Posvećeni razvojni timovi"),
                   desc: t(
-                    "Clear test plans, defect triage, and quality gates aligned to risk.",
-                    "Jasni planovi testiranja, trijaža defekata i kontrolne tačke usklađene s rizikom."
-                  ),
-                },
-                {
-                  title: t("Long-term team augmentation", "Dugoročno proširenje tima"),
-                  desc: t(
-                    "Dedicated engineers or QA specialists embedded in your workflows.",
-                    "Posvećeni inženjeri ili QA stručnjaci uključeni u vaše procese."
+                    "Plug-in squads that work like your own without hiring risk.",
+                    "Plug-in timovi koji rade kao vaši, bez rizika zapošljavanja."
                   ),
                 },
               ].map((c) => (
@@ -232,24 +177,51 @@ export default function Home() {
             <div className="grid gap-10 lg:grid-cols-12">
               <div className="lg:col-span-5">
                 <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">
-                  {t("A Simple, Transparent Engagement Model", "Jednostavan, transparentan model saradnje")}
+                  {t("How we work", "Kako radimo")}
                 </h2>
                 <p className="mt-4 text-base leading-relaxed text-muted">
                   {t(
-                    "You get dedicated capacity with clear scope boundaries, measurable output, and hourly billing aligned to the work performed.",
-                    "Dobijate posvećen kapacitet s jasnim granicama obima, mjerljivim rezultatima i satnicom usklađenom s obavljenim radom."
+                    "Straightforward steps that keep delivery predictable and transparent.",
+                    "Jednostavni koraci koji drže isporuku predvidivom i transparentnom."
                   )}
                 </p>
               </div>
               <ol className="lg:col-span-7 space-y-4">
                 {[
-                  t("Understanding project and requirements", "Razumijevanje projekta i zahtjeva"),
-                  t("Matching dedicated engineers or QA specialists", "Uparivanje posvećenih inženjera ili QA stručnjaka"),
-                  t("Hourly billing with full transparency", "Satnica s potpunom transparentnošću"),
-                  t("Long-term collaboration and integration into client workflows", "Dugoročna saradnja i integracija u procese klijenta"),
+                  {
+                    title: t("Understand the business problem", "Razumijemo poslovni problem"),
+                    desc: t(
+                      "Agree on goals, constraints, and what success looks like.",
+                      "Uskladimo ciljeve, ograničenja i šta znači uspjeh."
+                    ),
+                  },
+                  {
+                    title: t("Assemble the right senior engineers", "Okupimo odgovarajuće senior inženjere"),
+                    desc: t(
+                      "Match proven people to your stack and way of working.",
+                      "Povežemo provjerene ljude s vašim stackom i načinom rada."
+                    ),
+                  },
+                  {
+                    title: t(
+                      "Build with transparency and regular communication",
+                      "Gradimo uz transparentnost i redovnu komunikaciju"
+                    ),
+                    desc: t(
+                      "Frequent check-ins, clear documentation, and visible progress.",
+                      "Česti syncovi, jasna dokumentacija i vidljiv napredak."
+                    ),
+                  },
+                  {
+                    title: t("Support and iterate long-term", "Dugoročno podržavamo i iteriramo"),
+                    desc: t(
+                      "Keep releases stable while improving based on results.",
+                      "Održavamo stabilne releaseove i unapređujemo prema rezultatima."
+                    ),
+                  },
                 ].map((step, idx) => (
                   <li
-                    key={step}
+                    key={step.title}
                     className="rounded-2xl border border-border bg-surface/60 p-6 shadow-[var(--shadow-card)]"
                   >
                     <div className="flex items-start gap-4">
@@ -258,29 +230,10 @@ export default function Home() {
                       </div>
                       <div>
                         <h3 className="text-base font-semibold tracking-tight">
-                          {step}
+                          {step.title}
                         </h3>
                         <p className="mt-2 text-sm leading-relaxed text-muted">
-                          {idx === 0 &&
-                            t(
-                              "We align on objectives, constraints, dependencies, and delivery expectations.",
-                              "Usklađujemo ciljeve, ograničenja, zavisnosti i očekivanja isporuke."
-                            )}
-                          {idx === 1 &&
-                            t(
-                              "We propose profiles that match your technical stack and operating model.",
-                              "Predlažemo profile koji odgovaraju vašem tech stacku i operativnom modelu."
-                            )}
-                          {idx === 2 &&
-                            t(
-                              "You receive time tracking and work summaries for full accountability.",
-                              "Dobijate praćenje vremena i sažetke rada radi potpune odgovornosti."
-                            )}
-                          {idx === 3 &&
-                            t(
-                              "We integrate into your tooling and cadence for consistent execution.",
-                              "Integriramo se u vaše alate i ritam rada radi dosljedne realizacije."
-                            )}
+                          {step.desc}
                         </p>
                       </div>
                     </div>
@@ -291,16 +244,22 @@ export default function Home() {
           </Container>
         </Section>
 
-        {/* 5. INDUSTRIES & EXPERIENCE */}
-        <Section id="industries" className="border-y border-border bg-surface/30">
+        {/* 5. EXPERIENCE & TRUST */}
+        <Section id="experience" className="border-y border-border bg-surface/30">
           <Container>
             <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">
-              {t("Built for Complex, High-Responsibility Systems", "Prilagođeni složenim, odgovornim sistemima")}
+              {t("Experience & Trust", "Iskustvo i povjerenje")}
             </h2>
             <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted">
               {t(
-                "We contribute to products where correctness, uptime, and security are non-negotiable—without disrupting existing teams or processes.",
-                "Doprinosimo proizvodima gdje su ispravnost, dostupnost i sigurnost neupitni—bez ometanja postojećih timova ili procesa."
+                "Our engineers have contributed to large-scale systems used by millions of users across industries such as aviation, fintech, travel and real estate.",
+                "Naši inženjeri su doprinosili velikim sistemima koje koriste milioni korisnika u industrijama kao što su avijacija, fintech, putovanja i nekretnine."
+              )}
+            </p>
+            <p className="mt-3 max-w-3xl text-base leading-relaxed text-muted">
+              {t(
+                "Due to NDAs, we don’t publicly list client names, but our experience speaks through the quality and reliability of our work.",
+                "Zbog NDA obaveza ne objavljujemo imena klijenata, ali iskustvo se vidi kroz kvalitet i pouzdanost našeg rada."
               )}
             </p>
             <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -321,35 +280,59 @@ export default function Home() {
           </Container>
         </Section>
 
-        {/* 6. WHY XSG */}
-        <Section id="why-xsg">
+        {/* 7. ENGAGEMENT MODEL */}
+        <Section id="engagement-model" className="border-y border-border bg-surface/30">
           <Container>
-            <div className="grid gap-10 lg:grid-cols-12">
+            <div className="grid gap-10 lg:grid-cols-12 lg:items-start">
               <div className="lg:col-span-5">
                 <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">
-                  {t("A Reliable Technical Partner — Not Just Another Vendor", "Pouzdan tehnički partner — ne samo još jedan dobavljač")}
+                  {t("How We Engage", "Kako sarađujemo")}
                 </h2>
                 <p className="mt-4 text-base leading-relaxed text-muted">
                   {t(
-                    "We prioritize delivery quality, consistent communication, and the operational discipline needed for enterprise environments.",
-                    "Prioritet nam je kvalitet isporuke, dosljedna komunikacija i operativna disciplina potrebna u enterprise okruženju."
+                    "Hourly-based cooperation with clear expectations and teams that adjust as your priorities change.",
+                    "Saradnja na satnici sa jasnim očekivanjima i timovima koji se prilagođavaju promjenama prioriteta."
                   )}
                 </p>
               </div>
               <div className="lg:col-span-7">
                 <ul className="grid gap-4 sm:grid-cols-2">
                   {[
-                    t("Senior-level engineers & QA specialists", "Senior inženjeri i QA stručnjaci"),
-                    t("Clear communication and documentation", "Jasna komunikacija i dokumentacija"),
-                    t("Focus on stability, scalability, and security", "Fokus na stabilnost, skalabilnost i sigurnost"),
-                    t("Experience working within large organizations", "Iskustvo rada u velikim organizacijama"),
-                    t("Flexible team scaling", "Fleksibilno skaliranje timova"),
+                    {
+                      title: t("Hourly-based cooperation", "Saradnja na satnici"),
+                      desc: t(
+                        "You pay for focused delivery time with senior contributors.",
+                        "Plaćate fokusirane sate rada senior saradnika."
+                      ),
+                    },
+                    {
+                      title: t("Flexible scope and team size", "Fleksibilan obim i veličina tima"),
+                      desc: t(
+                        "Scale capacity up or down without long contracts.",
+                        "Povećajte ili smanjite kapacitet bez dugih ugovora."
+                      ),
+                    },
+                    {
+                      title: t("Long-term partnerships preferred", "Prednost dugoročnim partnerstvima"),
+                      desc: t(
+                        "We stay with products to keep quality and context intact.",
+                        "Ostajemo na proizvodu da kvalitet i kontekst ostanu netaknuti."
+                      ),
+                    },
+                    {
+                      title: t("Clear communication and expectations", "Jasna komunikacija i očekivanja"),
+                      desc: t(
+                        "Regular updates, transparent reporting, no surprises.",
+                        "Redovna ažuriranja, transparentni izvještaji, bez iznenađenja."
+                      ),
+                    },
                   ].map((item) => (
                     <li
-                      key={item}
-                      className="rounded-2xl border border-border bg-surface/60 p-6 text-sm leading-relaxed shadow-[var(--shadow-card)]"
+                      key={item.title}
+                      className="rounded-2xl border border-border bg-background/45 p-6 shadow-[var(--shadow-card)]"
                     >
-                      {item}
+                      <h3 className="text-base font-semibold tracking-tight">{item.title}</h3>
+                      <p className="mt-2 text-sm leading-relaxed text-muted">{item.desc}</p>
                     </li>
                   ))}
                 </ul>
@@ -358,158 +341,19 @@ export default function Home() {
           </Container>
         </Section>
 
-        {/* 6b. WORDS FROM OUR CEO */}
-        <Section id="leadership" className="border-t border-border bg-surface/20">
+        {/* 8. ABOUT */}
+        <Section id="about">
           <Container>
-            <div className="grid gap-10 lg:grid-cols-12 lg:items-center">
-              <div className="lg:col-span-4">
-                <div className="flex items-center gap-4">
-                  <div className="flex h-16 w-16 items-center justify-center rounded-full bg-background/60 text-lg font-semibold text-foreground shadow-[var(--shadow-card)]">
-                    CEO
-                  </div>
-                  <div>
-                    <p className="text-sm text-muted">{t("Words from our CEO", "Riječi našeg CEO-a")}</p>
-                    <p className="text-base font-semibold tracking-tight">
-                      {t("Leadership message", "Poruka rukovodstva")}
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="lg:col-span-8">
-                <div className="rounded-3xl border border-border bg-background/45 p-8 shadow-[var(--shadow-card)]">
-                  <p className="text-lg leading-relaxed">
-                    {t(
-                      "We exist to help teams ship reliable software with discipline and clarity. Our engineers and QA specialists integrate into your workflow, bring a calm, methodical approach, and keep quality high without slowing delivery.",
-                      "Postojimo da pomognemo timovima da isporučuju pouzdan softver s disciplinom i jasnoćom. Naši inženjeri i QA stručnjaci uklapaju se u vaš tok rada, donose smiren, metodičan pristup i održavaju visok kvalitet bez usporavanja isporuke."
-                    )}
-                  </p>
-                  <div className="mt-4 text-sm text-muted">
-                    {t("— CEO, XSG", "— CEO, XSG")}
-                  </div>
-                </div>
-              </div>
-            </div>
-          </Container>
-        </Section>
-
-        {/* 6c. CLIENT PRAISE */}
-        <Section id="testimonials" className="border-y border-border bg-surface/30">
-          <Container>
-            <div className="flex flex-col gap-3">
+            <div className="rounded-3xl border border-border bg-background/45 p-8 shadow-[var(--shadow-card)]">
               <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">
-                {t("What our clients appreciate", "Šta naši klijenti cijene")}
+                {t("About XSG", "O XSG-u")}
               </h2>
-              <p className="max-w-3xl text-base leading-relaxed text-muted">
+              <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted">
                 {t(
-                  "Straightforward collaboration, predictable delivery, and a focus on stability in production.",
-                  "Jasna saradnja, predvidiva isporuka i fokus na stabilnost u produkciji."
+                  "We are a senior engineering and QA group focused on reliable delivery, clear communication, and long-term partnerships.",
+                  "Senior inženjerski i QA tim fokusiran na pouzdanu isporuku, jasnu komunikaciju i dugoročna partnerstva."
                 )}
               </p>
-            </div>
-            <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-              {[
-                {
-                  quote: t(
-                    "They integrated quickly, improved our test coverage, and reduced incidents in production.",
-                    "Brzo su se uklopili, povećali pokrivenost testovima i smanjili incidente u produkciji."
-                  ),
-                  role: t("Director of Engineering, Fintech", "Direktor inženjeringa, Fintech"),
-                },
-                {
-                  quote: t(
-                    "Clear reporting and accountable hourly billing—no surprises, just steady delivery.",
-                    "Jasni izvještaji i transparentna satnica—bez iznenađenja, samo stabilna isporuka."
-                  ),
-                  role: t("VP Product, Enterprise SaaS", "VP proizvoda, Enterprise SaaS"),
-                },
-                {
-                  quote: t(
-                    "QA discipline and documentation helped us pass external audits without extra rework.",
-                    "QA disciplina i dokumentacija pomogle su nam da prođemo eksterne revizije bez dodatnog rada."
-                  ),
-                  role: t("CTO, Regulated Industry", "CTO, regulisana industrija"),
-                },
-              ].map((item) => (
-                <div
-                  key={item.quote}
-                  className="flex h-full flex-col justify-between rounded-2xl border border-border bg-background/45 p-6 shadow-[var(--shadow-card)]"
-                >
-                  <p className="text-sm leading-relaxed text-foreground/90">“{item.quote}”</p>
-                  <div className="mt-4 text-xs font-medium text-muted">{item.role}</div>
-                </div>
-              ))}
-            </div>
-          </Container>
-        </Section>
-
-        {/* 7. ENGAGEMENT MODEL */}
-        <Section id="engagement-model" className="border-y border-border bg-surface/30">
-          <Container>
-            <div className="grid gap-10 lg:grid-cols-12 lg:items-start">
-              <div className="lg:col-span-5">
-                <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">
-                  {t("Flexible Hourly Collaboration", "Fleksibilna saradnja na satnici")}
-                </h2>
-                <p className="mt-4 text-base leading-relaxed text-muted">
-                  {t(
-                    "Hourly billing with dedicated professionals—engage for short delivery spikes or long-term delivery lanes. Scale capacity up or down as priorities change, with transparent reporting and predictable communication.",
-                    "Satnica s posvećenim profesionalcima—uključite nas za kratke isporuke ili dugoročne tokove. Skalirajte kapacitet prema prioritetima, uz transparentno izvještavanje i predvidivu komunikaciju."
-                  )}
-                </p>
-              </div>
-              <div className="lg:col-span-7">
-                <div className="rounded-2xl border border-border bg-background/45 p-7 shadow-[var(--shadow-card)]">
-                  <h3 className="text-base font-semibold tracking-tight">
-                    {t("What you can expect", "Šta možete očekivati")}
-                  </h3>
-                  <dl className="mt-5 grid gap-5 sm:grid-cols-2">
-                    <div>
-                      <dt className="text-sm font-medium">
-                        {t("Dedicated capacity", "Posvećen kapacitet")}
-                      </dt>
-                      <dd className="mt-1 text-sm text-muted">
-                        {t(
-                          "Named engineers/QA specialists aligned to your stack and cadence.",
-                          "Imenovani inženjeri/QA stručnjaci usklađeni s vašim stackom i ritmom rada."
-                        )}
-                      </dd>
-                    </div>
-                    <div>
-                      <dt className="text-sm font-medium">
-                        {t("Transparent billing", "Transparentno fakturisanje")}
-                      </dt>
-                      <dd className="mt-1 text-sm text-muted">
-                        {t(
-                          "Hourly reporting with clear summaries of delivered work.",
-                          "Satno izvještavanje s jasnim sažecima obavljenog rada."
-                        )}
-                      </dd>
-                    </div>
-                    <div>
-                      <dt className="text-sm font-medium">
-                        {t("Scalable teams", "Skalabilni timovi")}
-                      </dt>
-                      <dd className="mt-1 text-sm text-muted">
-                        {t(
-                          "Add or reduce capacity without reworking your delivery model.",
-                          "Povećajte ili smanjite kapacitet bez promjene modela isporuke."
-                        )}
-                      </dd>
-                    </div>
-                    <div>
-                      <dt className="text-sm font-medium">
-                        {t("Quality focus", "Fokus na kvalitet")}
-                      </dt>
-                      <dd className="mt-1 text-sm text-muted">
-                        {t(
-                          "Testing discipline and engineering standards that match enterprise expectations.",
-                          "Disciplina testiranja i inženjerski standardi koji odgovaraju enterprise očekivanjima."
-                        )}
-                      </dd>
-                    </div>
-                  </dl>
-                </div>
-              </div>
             </div>
           </Container>
         </Section>
@@ -518,65 +362,58 @@ export default function Home() {
         <Section id="conversation">
           <Container>
             <div className="rounded-3xl border border-border bg-[linear-gradient(180deg,color-mix(in_oklab,var(--accent)_12%,transparent),transparent)] p-8 sm:p-12 shadow-[var(--shadow-card)]">
-              <div className="grid gap-8 lg:grid-cols-12 lg:items-center">
-                <div className="lg:col-span-7">
+              <div className="grid gap-8 lg:grid-cols-12 lg:items-start">
+                <div className="lg:col-span-5">
                   <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">
-                    {t("Let’s Talk About Your Project", "Razgovarajmo o vašem projektu")}
+                    {t("Tell us about your project.", "Recite nam o vašem projektu.")}
                   </h2>
                   <p className="mt-3 max-w-2xl text-base leading-relaxed text-muted">
                     {t(
-                      "Share a short overview and we’ll respond with next steps, suggested roles, and a clear hourly engagement outline.",
-                      "Podijelite kratak pregled i javit ćemo se s narednim koracima, predloženim ulogama i jasnim okvirom saradnje na satnici."
+                      "We’ll review your needs and get back to you with an honest assessment.",
+                      "Pregledaćemo vaše potrebe i javiti se s iskrenom procjenom."
                     )}
                   </p>
                 </div>
-                <div className="lg:col-span-5">
-                  <div className="flex flex-col gap-3 sm:flex-row lg:flex-col">
-                    <Button href="#book-call" variant="primary">
-                      {t("Book a free introductory call", "Zakažite besplatan uvodni poziv")}
-                    </Button>
-                    <Button href="#project-brief" variant="secondary">
-                      {t("Describe your project", "Opišite svoj projekat")}
-                    </Button>
-                  </div>
-                </div>
-              </div>
-
-              <div className="mt-10 grid gap-6 lg:grid-cols-12">
-                <div
-                  id="book-call"
-                  className="lg:col-span-5 rounded-2xl border border-border bg-background/40 p-6 shadow-[var(--shadow-card)]"
-                >
-                  <h3 className="text-sm font-semibold tracking-tight">
-                    {t("Intro call", "Uvodni poziv")}
-                  </h3>
-                  <p className="mt-2 text-sm leading-relaxed text-muted">
-                    {t(
-                      "For production sites, connect this button to your calendar tool (e.g., Calendly) or a dedicated booking page.",
-                      "Na produkciji povežite ovo dugme s kalendar alatom (npr. Calendly) ili posebnom stranicom za zakazivanje."
-                    )}
-                  </p>
-                </div>
-                <div
-                  id="project-brief"
-                  className="lg:col-span-7 rounded-2xl border border-border bg-background/40 p-6 shadow-[var(--shadow-card)]"
-                >
-                  <h3 className="text-sm font-semibold tracking-tight">
-                    {t("Project brief", "Kratak opis projekta")}
-                  </h3>
-                  <p className="mt-2 text-sm leading-relaxed text-muted">
-                    {t("Send a short brief to ", "Pošaljite kratak opis na ")}
-                    <a
-                      className="text-accent-2 underline decoration-border underline-offset-4 hover:decoration-accent"
-                      href="mailto:hello@example.com"
-                    >
-                      hello@example.com
-                    </a>{" "}
-                    {t(
-                      "(replace with your business email). Include timeline, stack, and whether you need engineering, QA, or both.",
-                      "(zamijenite vašim poslovnim emailom). Uključite vremenski okvir, tech stack i da li trebate inženjering, QA ili oboje."
-                    )}
-                  </p>
+                <div className="lg:col-span-7">
+                  <form className="grid gap-4">
+                    <label className="flex flex-col gap-2 text-sm font-medium text-foreground">
+                      {t("Name", "Ime")}
+                      <input
+                        className="rounded-xl border border-border bg-background/60 px-4 py-3 text-sm text-foreground outline-none focus:border-accent focus:ring-2 focus:ring-accent/40"
+                        type="text"
+                        name="name"
+                        placeholder={t("Your name", "Vaše ime")}
+                      />
+                    </label>
+                    <label className="flex flex-col gap-2 text-sm font-medium text-foreground">
+                      {t("Email", "Email")}
+                      <input
+                        className="rounded-xl border border-border bg-background/60 px-4 py-3 text-sm text-foreground outline-none focus:border-accent focus:ring-2 focus:ring-accent/40"
+                        type="email"
+                        name="email"
+                        placeholder={t("you@company.com", "vi@kompanija.com")}
+                      />
+                    </label>
+                    <label className="flex flex-col gap-2 text-sm font-medium text-foreground">
+                      {t("Short description", "Kratak opis")}
+                      <textarea
+                        className="min-h-[140px] rounded-xl border border-border bg-background/60 px-4 py-3 text-sm text-foreground outline-none focus:border-accent focus:ring-2 focus:ring-accent/40"
+                        name="description"
+                        placeholder={t(
+                          "What do you need help with?",
+                          "Za šta vam treba pomoć?"
+                        )}
+                      />
+                    </label>
+                    <div className="flex justify-end">
+                      <button
+                        type="submit"
+                        className="inline-flex items-center justify-center gap-2 rounded-full bg-foreground px-5 py-3 text-sm font-semibold tracking-tight text-background outline-none transition-all duration-150 hover:bg-accent-2 focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+                      >
+                        {t("Start a conversation", "Započnimo razgovor")}
+                      </button>
+                    </div>
+                  </form>
                 </div>
               </div>
             </div>
